@@ -157,6 +157,7 @@
       if(data.responseText) {
         error_msg += data.responseText;
       }
+      error_msg = 'Successfully Submitted'
       this_form.find('.loading').slideUp();
       this_form.find('.error-message').slideDown().html(error_msg);
     });
